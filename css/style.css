@@ -1,7 +1,166 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body{
+    height: 100vh;
+    width: 100%;
+    overflow-y: hidden;
+    background-image: linear-gradient(to bottom, #009688 0px, #009688 15vh,  #dddbd1 15vh,  #d2dbdc 100%);
+    display: flex;
+}
+
+#app{
+    margin: auto;
+    width: 75%;
+    min-width: 1000px;
+    height: 90%;
+    display: flex;
+}
+
+img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
 }
 
 
+.my_contacts-window{
+    background-color: white;
+    width: 470px;
+    height: 100%;
+}
+
+
+.my_dialog-window{
+    background-color:#f3eeea;
+    width: 100%;
+    height: 100px;
+}
+
+
+.my_chat-window{
+    background-image: url('../img/mine.jpg');
+    width: 100%;
+    height: calc(100% - 100px) ;
+    position: relative;
+}
+
+nav i {
+    color:red;
+}
+i{
+    width: 100%;
+}
+
+.my_input{
+    background-color: white;
+    width: 900px;
+    border-radius: 10px;
+}
+
+.my_single-person{
+    background-color: #eaeaea;
+    width: 100%;
+    height: 80px;
+}
+
+.my_notification{
+    background-color: #8edafc;
+    width: 100%;
+    height: 90px;
+}
+
+.michele{
+    background-color: khaki;
+    width: 100%;
+    height: 90px;
+}
+
+.contact-list{
+    background-color: #ffffff;
+    width: 100%;
+    height: calc(100% - 240px);
+    overflow-y: auto;
+}
+
+
+.my_border{
+    border-top: 1px solid #d6d6d6;
+}
+
+
+.contact.active{
+    background-color: #e9ebeb;
+}
+
+.my_border:hover{
+    background-color:  #e9ebeb ;
+}
+
+.my_bell{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.blue-bell{
+    margin: auto;
+}
+
+.my_personal {
+    background-color:#eaeaea;
+    width: 100%;
+    height: 80px;
+    border-left: solid #d6d6d6 1px ;
+}
+
+.my_search{
+    background-color: #fafafa;
+    width: 100%;
+    height: 70px;
+}
+
+
+.my_search-ppl{
+    background-color: #ffffff;
+    width: 95%;
+    height: 70%;
+}
+
+.my_h{
+    font-size: small;
+    color: #b7bcc8;
+}
+
+.my_bell-icon {
+    margin: 0 auto;
+}
+
+.my_hs{
+    font-size: x-small;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+.clearfix::after{
+    clear: both;
+    display: block;
+    content: '';
+}
+
+.message{
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    clear: both;
+}
+
+.message-sent{
+    float: right;
+    background-color: #d5f9ba;
+}
+
+.message-received{
+    float: left;
+    background-color: white;
+}
