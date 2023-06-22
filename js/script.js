@@ -179,8 +179,75 @@ createApp({
     },
 
     methods: {
+        chatSelection(index){
+            this.currentIndex = index
+
+        },
+
+        newMessage(){
+
+  
+            this.inputValue = this.inputValue.trim()
+            if (this.inputValue === '') {
+                return
+            }
+
+            const nowDate= this.getDate('dd/LL/yyyy HH:mm:ss')
 
 
+            const newMex ={
+                date: nowDate,
+                message: this.inputValue,
+                status: 'sent'
+            }
+            this.contacts[this.currentIndex].messages.push(newMex)
+            const activeContact = this.contacts[this.currentIndex]
+
+            setTimeout(() => {
+                const newResponse ={
+                    date: nowDate,
+                    message: 'ok',
+                    status: 'received'
+                }
+                activeContact.messages.push(newResponse)
+            }, 1000)    
+            
+            this.inputValue = ''    
+        },
+
+        
+        messageDate(i){
+            newDate = this.contacts[this.currentIndex].messages[i].date
+            newDateFormat = this.DT.fromFormat(newDate,'dd/LL/yyyy HH:mm:ss')
+            hours = newDateFormat.toFormat('HH:mm') 
+            return hours;
+        },
+
+        getDate(format){
+            let now = DateTime.now()
+            if(!format){
+                format = 'dd/LL/yyyy'
+            }
+            console.log(now.toFormat(format));
+            return now.toFormat(format)
+        },
+
+        isHidden(contact){
+            const name = contact.name.toLowerCase()
+            const search = this.search.trim().toLowerCase()
+
+            const result = !name.includes(search)
+
+            return result
+        },
+
+        lastMessage(contact){
+
+            let lastIndex = contact.messages.length - 1
+            for (let i = 0; i < lastIndex; i++) {
+                return contact.messages[lastIndex].message
+            }
+        },
 
         
     }
