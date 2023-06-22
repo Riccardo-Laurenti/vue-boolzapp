@@ -25,6 +25,7 @@ img{
     background-color: white;
     width: 470px;
     height: 100%;
+    cursor: pointer;
 }
 
 
@@ -32,6 +33,7 @@ img{
     background-color:#f3eeea;
     width: 100%;
     height: 100px;
+    cursor: pointer;
 }
 
 
