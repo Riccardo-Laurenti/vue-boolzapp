@@ -173,6 +173,13 @@ createApp({
 
         }
     },
-    
+    methods: {
+        selectConctact(index){
+            this.activeContactIndex = index;
+        },
 
+
+
+
+        
 }).mount('#app')
