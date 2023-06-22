@@ -4,6 +4,7 @@ body{
     overflow-y: hidden;
     background-image: linear-gradient(to bottom, #009688 0px, #009688 15vh,  #dddbd1 15vh,  #d2dbdc 100%);
     display: flex;
+    cursor: pointer;
 }
 
 #app{
@@ -25,7 +26,6 @@ img{
     background-color: white;
     width: 470px;
     height: 100%;
-    cursor: pointer;
 }
 
 
@@ -33,7 +33,6 @@ img{
     background-color:#f3eeea;
     width: 100%;
     height: 100px;
-    cursor: pointer;
 }
 
 
