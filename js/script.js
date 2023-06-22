@@ -178,4 +178,10 @@ createApp({
         }
     },
 
+    methods: {
+
+
+
+        
+    }
 }).mount('#app')
