@@ -15,11 +15,13 @@ body {
     border-radius: 999px;
 }
 
+
 .avatar-image {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 .avatar-icon > i {
     padding: 10px;
@@ -27,14 +29,17 @@ body {
     color: gray;
 }
 
+
 .user-info p {
     color: grey;
     font-size: 0.8em;
 }
 
+
 .user-option {
     background-color: #EAEAEA;
 }
+
 
 .bell-slash > i {
     color: currentColor;
@@ -47,22 +52,27 @@ body {
     align-items: center;
 }
 
+
 .chat-bg {
     background-image: url('https://i.pinimg.com/originals/ab/ab/60/abab60f06ab52fa7846593e6ae0c9a0b.png');
 }
 
+
 .chat-list-user:hover {
     background-color: #d2dbdc;
 }
+
 
 .user-bar {
     border-left: 1px solid lightgray;
     background-color: #EAEAEA;
 }
 
+
 .write-bar {
     align-items: end;
 }
+
 
 .message {
     border-radius: 12px;
@@ -82,12 +92,16 @@ body {
     right: 4px;
     color: #979797;
 }
+
+
 .message.sent {
-    background-color: #91F39A;
+    background-color: #ddffe0;
     display: flex;
     align-self: flex-end;
     max-width: 60%;
 }
+
+
 .message.received {
     background-color: white;
     max-width: 60%;
@@ -95,9 +109,11 @@ body {
     align-self: flex-start;
 }
 
+
 .toolbar{
     border-left: 1px solid lightgrey;
 }
+
 
 .toolbar > [class^="col-"] {
     display: flex;
@@ -110,6 +126,12 @@ body {
     background-color: #d2dbdc;
 }
 
+
 .hidden{
     display: none;
+}
+
+
+.my-point-r {
+    cursor:  pointer;
 }
