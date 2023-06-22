@@ -167,3 +167,9 @@ createApp({
                     ],
                 }
             ],
+            activeContactIndex: 0,
+
+            userAnswer: 'ok' * 1000,
+
+        }
+    },
