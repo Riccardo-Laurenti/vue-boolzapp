@@ -249,6 +249,17 @@ createApp({
             }
         },
 
+        lastDate(contact){
+
+            let lastIndex = contact.messages.length - 1
+            for (let i = 0; i < lastIndex; i++) {
+                let lastMessageDate = contact.messages[lastIndex].date
+                let newFormat = this.DT.fromFormat(lastMessageDate,'dd/LL/yyyy HH:mm:ss')
+                let hours = newFormat.toFormat('HH:mm') 
+                return hours
+                
+            }
+        }
         
     }
-}).mount('#app')
+}).mount('#app');
