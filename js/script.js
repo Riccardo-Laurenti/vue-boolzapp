@@ -162,3 +162,20 @@ const contacts= [
         ],
     }
 ]
+
+
+const DateTime = luxon.DateTime
+
+createApp({
+    data() {
+        return {
+            contacts: contacts,
+            currentIndex:0,
+            inputValue:'',
+            DT:DateTime,
+            search:'',
+
+        }
+    },
+
+}).mount('#app')
