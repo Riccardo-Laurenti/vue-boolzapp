@@ -6,6 +6,7 @@ const contacts= [
         visible: true,
         messages: [
             {
+                id : 1,
                 date: '10/01/2020 15:30:55',
                 message: 'Hai portato a spasso il cane?',
                 status: 'sent'
@@ -28,6 +29,7 @@ const contacts= [
         visible: true,
         messages: [
             {
+                id: 2,
                 date: '20/03/2020 16:30:00',
                 message: 'Ciao come stai?',
                 status: 'sent'
@@ -50,6 +52,7 @@ const contacts= [
         visible: true,
         messages: [
             {
+                id: 3,
                 date: '28/03/2020 10:10:40',
                 message: 'La Marianna va in campagna',
                 status: 'received'
@@ -72,6 +75,7 @@ const contacts= [
         visible: true,
         messages: [
             {
+                id: 4,
                 date: '10/01/2020 15:30:55',
                 message: 'Lo sai che ha aperto una nuova pizzeria?',
                 status: 'sent'
@@ -89,6 +93,7 @@ const contacts= [
         visible: true,
         messages: [
             {
+                id: 5,
                 date: '10/01/2020 15:30:55',
                 message: 'Ricordati di chiamare la nonna',
                 status: 'sent'
@@ -106,6 +111,7 @@ const contacts= [
         visible: true,
         messages: [
             {
+                id: 6,
                 date: '10/01/2020 15:30:55',
                 message: 'Ciao Claudia, hai novità?',
                 status: 'sent'
@@ -128,6 +134,7 @@ const contacts= [
         visible: true,
         messages: [
             {
+                id: 7,
                 date: '10/01/2020 15:30:55',
                 message: 'Fai gli auguri a Martina che è il suo compleanno!',
                 status: 'sent'
@@ -145,6 +152,7 @@ const contacts= [
         visible: true,
         messages: [
             {
+                id: 8,
                 date: '10/01/2020 15:30:55',
                 message: 'Ciao, andiamo a mangiare la pizza stasera?',
                 status: 'received'
