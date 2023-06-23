@@ -1,5 +1,5 @@
 const { createApp } = Vue
-const contacts= [
+const contacts = [
     {
         name: 'Michele',
         avatar: './img/avatar_1.jpg',
